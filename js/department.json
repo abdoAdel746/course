@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 10,
+        "department" : "Biology",
+        "uinversity_id" : "1"
+    },
+    {
+        "id" : 11,
+        "department" : "Chemistry and Biochemistry",
+        "uinversity_id" : "1"
+    },
+    {
+        "id" : 12,
+        "department" : "Computer Science",
+        "uinversity_id" : "2"
+    },
+    {
+        "id" : 13,
+        "department" : "Earth and Space Sciences",
+        "uinversity_id" : "3"
+    },
+    {
+        "id" : 14,
+        "department" : "commerece",
+        "uinversity_id" : "3"
+    },
+    {
+        "id" : 15,
+        "department" : "History",
+        "uinversity_id" : "4"
+    }
+]

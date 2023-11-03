@@ -1,0 +1,271 @@
+$color: #fff;
+$dir: rtl;
+@font-face {
+    font-family: arFont;
+    src: url(fonts/cocon.otf);
+}
+
+@font-face {
+    font-family: droBold;
+    src: url(fonts/DroidKufi-Bold.ttf);
+}
+
+@font-face {
+    font-family: droReg;
+    src: url(fonts/droRego.ttf);
+}
+
+@font-face {
+    font-family: numFont;
+    src: url(fonts/GE_SS_Two_Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "arial", tahoma;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: droReg;
+}
+
+html {
+    height: 100%;
+}
+
+.transform {
+    transition: all 0.3s ease-in-out;
+}
+
+.button1 {
+    border-radius: 5px;
+    color: #020202;
+    background-color: #45a7ff;
+    padding: 4px;
+    border: none;
+    width: 6em;
+    &:hover {
+        @extend .transform;
+        background: #3d4f5f;
+        color: white;
+    }
+}
+
+
+/*start header*/
+
+body {
+    background: #fbfbfb;
+}
+
+.section {
+    margin-bottom: 10em;
+    margin-top: 10em;
+}
+
+.header {
+    color: #2e404f;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 0 !important;
+    height: 4em;
+    .navbar-brand {
+        font-family: numFont;
+        font-size: 60px;
+        color: #3d4882;
+    }
+    .nav-item {
+        a {
+            font-family: arFont !important;
+            color: #202428;
+            font-size: 18px;
+        }
+    }
+    input {
+        border: 1px solid #cacaca;
+        border-radius: 5px;
+        outline: none;
+        width: 25%;
+        padding: 5px;
+        padding-right: 16px;
+    }
+    .user_group {
+        align-items: baseline;
+    }
+    .user_group span {
+        margin-right: 13px;
+        font-size: 15px;
+        font-family: inherit;
+        letter-spacing: 1px;
+    }
+}
+
+footer {
+    @extend .section;
+    background: #212529;
+    padding: 8em 0;
+    height: 30em;
+    position: relative;
+    color: white;
+    h1 {
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'droBold';
+    }
+    p {
+        color: #cdd2da;
+        font-size: 16px;
+        font-family: 'arFont';
+        line-height: 1.9;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-right: -1em;
+        li {
+            padding: 8px;
+            border-radius: 9px;
+            width: 7em;
+            text-align: center;
+            margin-left: 1em;
+            color: #cdd2da;
+            font-size: 16px;
+            font-family: 'arFont';
+            line-height: 1.9;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .card_footer {
+        position: absolute;
+        width: 20em;
+        height: 31em;
+        background: #09254e;
+        top: -15.87em;
+        right: 1em;
+        .card {
+            background: #dc3545;
+            height: 8em;
+            width: 15em;
+            margin: 0px 30px;
+            position: relative;
+            border-radius: 0;
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 8.1em solid transparent;
+                border-right: 7.05em solid transparent;
+                border-top: 5em solid #dc3545;
+                position: absolute;
+                top: 158px;
+                left: -2px;
+            }
+            .penta {
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                z-index: 1;
+                img {
+                    width: 5em;
+                }
+                h1 {
+                    font-size: 3em;
+                }
+            }
+            .card_inner {
+                padding: 2em;
+                margin-top: 2em;
+                h1 {
+                    margin-right: -2em;
+                    margin-bottom: 1em;
+                }
+                .d-flex {
+                    align-items: baseline;
+                    line-height: 2;
+                    width: 16em;
+                    .card_svg {
+                        background: #dc3545;
+                        left: 71px;
+                        padding: 11px;
+                        top: 0;
+                        width: 52px;
+                        height: 50px;
+                        .parent_svg {
+                            position: absolute;
+                            left: -18px;
+                            top: 5px;
+                            z-index: 1;
+                        }
+                    }
+                    i {
+                        position: absolute;
+                        top: 9px;
+                        left: -17px;
+                        /* background: #51151b; */
+                        color: black;
+                        font-size: 18px;
+                        width: 30px;
+                        height: 30px;
+                        padding: 7px;
+                        border-radius: 50%;
+                        z-index: 2;
+                    }
+                    i+svg {
+                        position: absolute;
+                        width: 48px;
+                        height: 50.6px;
+                        left: -23px;
+                        top: 0px;
+                        z-index: 0;
+                    }
+                    span {
+                        text-transform: lowercase;
+                        font-family: numFont;
+                        direction: ltr;
+                        position: relative;
+                        top: -1em;
+                        left: 2em;
+                        font-family: 'arFont';
+                        color: #e8e8e8;
+                    }
+                }
+            }
+        }
+    }
+    .fonts_footer {
+        margin: 1em 0 3em 15em;
+    }
+    .fonts {
+        display: flex;
+        margin-top: 1em;
+        .fab {
+            margin-top: 1em;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 1.9;
+            /* font-size: 2em; */
+            border: 1px;
+            border-radius: 50%;
+            /* color: black; */
+            background: #2d4466;
+        }
+        a {
+            color: aliceblue;
+            margin-right: 1em;
+        }
+        a:hover {
+            color: #d5d5d5;
+        }
+    }
+    .cpy_right {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}

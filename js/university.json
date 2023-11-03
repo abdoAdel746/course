@@ -1,0 +1,18 @@
+[
+    {
+        "id"         : "1",
+        "university" : "ain shams"
+    },
+    {
+        "id"         : "2",
+        "university" : "cairo"
+    },
+    {
+        "id"         : "3",
+        "university" : "alexandria"
+    },
+    {
+        "id"         : "4",
+        "university" : "mansoura"
+    }
+]
